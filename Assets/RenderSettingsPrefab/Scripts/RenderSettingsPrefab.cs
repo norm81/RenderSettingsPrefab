@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -12,114 +12,114 @@ using UnityEditor;
 public class RenderSettingsPrefab : MonoBehaviour
 {
 #region RenderSettings
-	/// <summary>
-	/// Size of the Light halos.
-	/// </summary>
+    /// <summary>
+    /// Size of the Light halos.
+    /// </summary>
     public float haloStrength;
 
-	/// <summary>
-	/// Cubemap resolution for default reflection.
-	/// </summary>
+    /// <summary>
+    /// Cubemap resolution for default reflection.
+    /// </summary>
     public int defaultReflectionResolution;
 
-	/// <summary>
-	/// Default reflection mode.
-	/// </summary>
+    /// <summary>
+    /// Default reflection mode.
+    /// </summary>
     public DefaultReflectionMode defaultReflectionMode;
 
-	/// <summary>
-	/// The number of times a reflection includes other reflections.
-	/// </summary>
+    /// <summary>
+    /// The number of times a reflection includes other reflections.
+    /// </summary>
     public int reflectionBounces;
-    
-	/// <summary>
-	/// How much the skybox / custom cubemap reflection affects the scene.
-	/// </summary>
+
+    /// <summary>
+    /// How much the skybox / custom cubemap reflection affects the scene.
+    /// </summary>
     public float reflectionIntensity;
 
-	/// <summary>
-	/// The light used by the procedural skybox.
-	/// </summary> 
+    /// <summary>
+    /// The light used by the procedural skybox.
+    /// </summary>
     public Light sun;
 
-	/// <summary>
-	/// The global skybox to use.
-	/// </summary>
+    /// <summary>
+    /// The global skybox to use.
+    /// </summary>
     public Material skybox;
 
-	/// <summary>
-	/// The color used for the sun shadows in the Subtractive lightmode.
-	/// </summary>
+    /// <summary>
+    /// The color used for the sun shadows in the Subtractive lightmode.
+    /// </summary>
     public Color subtractiveShadowColor;
 
-	/// <summary>
-	/// Flat ambient lighting color.
-	/// </summary>
-	public float ambientIntensity;
+    /// <summary>
+    /// Flat ambient lighting color.
+    /// </summary>
+    public float ambientIntensity;
 
-	/// <summary>
-	/// Ambient lighting coming from below.
-	/// </summary>
+    /// <summary>
+    /// Ambient lighting coming from below.
+    /// </summary>
     public Color ambientGroundColor;
 
-	/// <summary>
-	/// Ambient lighting coming from the sides.
-	/// </summary>
+    /// <summary>
+    /// Ambient lighting coming from the sides.
+    /// </summary>
     public Color ambientEquatorColor;
 
-	/// <summary>
-	/// Ambient lighting coming from above.
-	/// </summary>
+    /// <summary>
+    /// Ambient lighting coming from above.
+    /// </summary>
     public Color ambientSkyColor;
 
-	/// <summary>
-	/// Ambient lighting mode.
-	/// </summary>
+    /// <summary>
+    /// Ambient lighting mode.
+    /// </summary>
     public AmbientMode ambientMode;
 
-	/// <summary>
-	/// The density of the exponential fog.
-	/// </summary>
+    /// <summary>
+    /// The density of the exponential fog.
+    /// </summary>
     public float fogDensity;
 
-	/// <summary>
-	/// The color of the fog.
-	/// </summary>
+    /// <summary>
+    /// The color of the fog.
+    /// </summary>
     public Color fogColor;
 
-	/// <summary>
-	/// Fog mode to use.
-	/// </summary>
+    /// <summary>
+    /// Fog mode to use.
+    /// </summary>
     public FogMode fogMode;
 
-	/// <summary>
-	/// The ending distance of linear fog.
-	/// </summary>
+    /// <summary>
+    /// The ending distance of linear fog.
+    /// </summary>
     public float fogEndDistance;
 
-	/// <summary>
-	/// The starting distance of linear fog.
-	/// </summary>
+    /// <summary>
+    /// The starting distance of linear fog.
+    /// </summary>
     public float fogStartDistance;
 
-	/// <summary>
-	/// Is fog enabled?
-	/// </summary>
+    /// <summary>
+    /// Is fog enabled?
+    /// </summary>
     public bool fog;
 
-	/// <summary>
-	/// Custom specular reflection cubemap.
-	/// </summary>	
+    /// <summary>
+    /// Custom specular reflection cubemap.
+    /// </summary>
     public Cubemap customReflection;
 
-	/// <summary>
-	/// The intensity of all flares in the scene.
-	/// </summary>
+    /// <summary>
+    /// The intensity of all flares in the scene.
+    /// </summary>
     public float flareStrength;
 
-	/// <summary>
-	/// The fade speed of all flares in the scene.
-	/// </summary>
+    /// <summary>
+    /// The fade speed of all flares in the scene.
+    /// </summary>
     public float flareFadeSpeed;
 #endregion
 
